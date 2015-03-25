@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans>
+ <bean id="user" class="com.wang.spring.test.User">
+ 	<properties name="name" value="wangcanpei"/>
+ 	<properties name="adrresMap">
+ 		<map>
+ 			<entry key="one1">
+ 				<value>"nicai"</value>
+ 			</entry>
+ 			<entry key="one2">
+ 				<value>"nicai2"</value>
+ 			</entry>
+ 		</map>
+ 	</properties>
+ </bean>
+  <bean id="userService" class="com.wang.spring.test.UserService">
+  <properties name="user" ref="user"/>
+  </bean>
+</beans>

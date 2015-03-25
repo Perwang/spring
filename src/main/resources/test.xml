@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configure>
+	<jdbcInfo>
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		<url>jdbc:oracle:thin:@localhost:1521:orcl</url>
+		<username>scott</username>
+		<password>scottlxd</password>
+	</jdbcInfo>
+	<beans>
+		<bean id="beanDao" class="com.xdzj.dao.bean1"></bean>
+		<bean id="beanService" class="com.xdzj.service.bean2"></bean>
+	</beans>
+</configure>
